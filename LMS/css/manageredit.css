@@ -1,0 +1,159 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.managereditnavbar{
+    position: sticky;
+    top: 0;
+}
+.managereditmainbox{
+    display: flex;
+    flex-direction: column;
+    
+  
+  
+}
+.manageredit-records-content{
+    display: flex;
+}
+
+.manager-addbooks-container{
+    width: 100%;
+   
+   
+    background-color: rgb(232, 229, 229);
+    display:none; 
+ 
+}
+
+.manager-addbook{
+    margin: 2% auto; 
+    display:flex;
+    width: 30%;
+    flex-direction: column;
+}
+.manager-addbook-content{
+    width: 100%;
+}
+.textarea{
+    height: 20vh;
+    text-align: start;
+}
+
+.manager-formcontrol{
+    border:none;
+    border-bottom: 1.5px solid #333;
+    background: transparent;
+    color:rgb(60, 107, 111);
+    padding: 3% 0 0 2px;
+}
+input, select, textarea{
+    color: rgb(60, 107, 111);
+    margin: 5px;
+    font-size: 1.05rem;
+}
+.manager-addbook-button{
+    background-color:rgb(60, 107, 111);
+    border:2px solid rgb(60, 107, 111);
+    padding:4px 1px;
+    color:rgb(232, 229, 229);
+}
+.manager-addbook-toggle-button{
+    background-color:rgb(60, 107, 111);
+    border:2px solid rgb(60, 107, 111);
+    padding:4px 1px;
+    margin: 3% auto;
+    padding: 2px 5px;
+    width: 40%;
+    color:rgb(232, 229, 229);
+}
+.manager-displaynone{
+    display: none;
+}
+.manager-book-trigger{
+  display: flex;
+}
+textarea:focus, input:focus {
+    color: rgb(60, 107, 111);
+    border-radius: none;
+    outline:none;
+
+}
+::placeholder{
+    color:rgb(60, 107, 111);
+    padding:3px;
+}
+
+.form-file-input{
+    outline: none;
+}
+
+
+/*  */
+
+.manageredit-records{
+    width: 70%;
+    margin:auto;
+    background-color: rgb(232, 229, 229);
+    padding:2% 0px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 80vh;
+    max-height: 40vh;
+    overflow-y:scroll;
+}
+
+.manageredit-container{
+    width: 70%;
+    border:2px solid gray;
+    margin: 1.5% auto;
+    border-radius:8px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding:1% 5%;
+}
+.manageredit-panal{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items:center;
+}
+.manageredit-details{
+    width:80%;
+}
+.managereditname{
+    font-family:monospace;
+    margin:2px;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+.managereditauthor{
+    font-family:monospace;
+    margin:1%;
+    color:gray;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.managereditAbout{
+    font-family:monospace;
+    margin:1.4%;
+    color: gray;
+    min-height: 4vh;
+    max-height: 12vh;
+    box-sizing: border-box;
+    font-size: 1rem;
+    overflow-y: hidden;
+}
+.managereditButton{
+    background-color:rgb(60, 107, 111);
+    padding: 4px 15px;
+    width: 100px;
+    margin: 6px 0px;
+    font-size: 1rem;
+    border:  0px;
+    border-radius:8px;
+    
+}

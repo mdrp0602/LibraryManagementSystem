@@ -1,0 +1,434 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: rgb(232, 229, 229);
+}
+.navbar{
+  background-color:#393E46;
+  color:#6D9886;
+  display:block;
+  top:0px;
+  position:sticky;
+  padding:2% 4%;
+  box-sizing:border-box;
+  width:100%;
+  z-index:5;
+}
+
+.navbar-container{
+    display:table;
+    width:100%;
+}
+.navbar-logo{
+    display:block;
+    float: left;
+   
+}
+.nabar-links{
+    display:block;
+    width:100%;
+}
+.navbar-main{
+    list-style: none;
+    margin: 0px 5px;
+    
+}
+.navbar-main li{
+    display:inline;
+    float:right;
+}
+.navbar-mobile-menu{
+    display: block;
+    float:right;
+    display: none;
+}
+.nav-logo{
+    font-size:1.2rem;
+    font-family:monospace;
+    margin-right:25px;
+    color:azure;
+    text-decoration:none;
+}
+.nav-logo span{
+    color:orange;
+}
+.nav-name{
+    font-size:1.2rem;
+    font-family:monospace;
+    margin-right:25px;
+    color:azure;
+    text-decoration:none;
+}
+.navbar-main li a{
+    margin:0px 20px;
+    text-decoration:none;
+    color:azure;
+    font-size:1.1rem;
+    font-family:monospace;
+    position:relative;
+}
+.navbar-main li a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    background-color:orange;
+    left:0px;
+    bottom:-1px;
+    transition: all 0.5s;
+}
+.navbar-main li a:hover{
+    color:orange;
+    transition: all 0.2s;
+}
+.navbar-main li a:hover::after{
+    width:100%;
+}
+
+    /* Main Container */
+    .main-container{
+        display:flex;
+        padding:0% 2%;
+        /* flex-direction: column-reverse; */
+        box-sizing:border-box;
+        background-color:transparent;
+    }
+    .main-box-1{
+        width:65%;
+        /* background-color: rebeccapurple; */
+        /* background-color:transparent; */
+        padding:4% 2%;
+        display:flex;
+        box-sizing:border-box;
+        flex-direction:column;
+
+    }
+    .main-box-1-op{
+        padding:2% 2%;
+        background-color:transparent;
+        display:flex;
+     
+        justify-content:flex-start;
+    
+    }
+    .main-content-1{
+        margin:0% 2%;
+        border-radius:6px;
+        padding:4% 4%;
+        width: 35vh;
+        
+        background-color: whitesmoke;
+        font-family: monospace;
+        /* margin:0% 2%; */
+    }
+    .main-content-heading{
+        font-size:1.6rem;
+        margin:2px 0px;
+    }
+    .books-borrowed,.number-of-books{
+        font-size:0.7rem;
+        width:75%;
+        margin:2px 0px;
+        color:gray;
+    }
+    
+    /* .main-content-box-1{
+      
+       
+    }
+    .main-content-box-2{
+   
+       
+    } */
+    .main-box-1-guidlines{
+        padding:5% 3%;
+        display: flex;
+
+        /* background-color:pink; */
+    }
+    .guidlines{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        background-color: transparent;
+      
+    }
+    .guidline{
+        list-style-type:decimal;
+        font-size:1.1rem;
+        font-family: monospace;
+        margin:2px 0px;
+        color:gray;
+  
+    }
+    .main-box-2{
+        width:35%;
+        display:flex;
+    }
+
+    .profile-container{
+        background-color:rgb(169, 167, 167);
+        padding:2%;
+        width:75%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin:0 auto;
+        height: 100%;
+    }
+    .profile-image{
+        display: flex;
+    }
+    .profile-image img{
+        width:40%;
+        height:20vh;
+        margin:5px 20px;
+        border-radius: 4px;
+    }
+
+    /* profile data */
+
+
+    .profile-data{
+        font-size:0.7rem;
+        width:90%;
+        margin:5% auto;
+        overflow-wrap: break-word;
+        font-family:monospace;
+
+    }
+    .profile-content{
+        margin:3% auto;
+    }
+    .profile-content span{
+        color:rgb(212, 212, 212);
+    }
+        
+
+/* ************************ ************* ******************************* */
+/* ************************ ************* ******************************* */
+/* ************************ Media Queris ******************************* */
+/* ************************ ************* ******************************* */
+/* ************************ ************* ******************************* */
+
+
+
+@media screen and (min-width:480px) and (max-width:780px){
+    .navbar-logo{
+        display:block;
+        width:100%;
+        text-align: center;
+        margin: 1% 0%;
+        
+    }
+    .nabar-links{
+        display:block;
+        width:100%;  
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:1% 0;
+    }
+    /* .nav-logo{
+        float:left;
+    } */
+
+    .main-box-1{
+        width: 50%;
+    }
+    .main-box-2{
+        width: 50%;
+    }
+    .guidline{
+        list-style-type:decimal;
+        font-size:0.7rem;
+    }
+    .main-content-1{
+        
+        padding:4% 4%;
+
+    }
+    .main-content-heading{
+        font-size:1rem;
+        margin:2px 0px;
+    }
+    .books-borrowed,.number-of-books{
+        font-size:0.4rem;
+      
+        
+    }
+    
+    /* profile */
+    .profile-container{
+     
+        
+        width:75%;
+    }
+
+    .profile-data{
+        font-size:0.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width:480px) {
+    .navbar{
+        padding: 3% 0% 2% 0%;
+    }
+    .nav-logo{
+        display: block;
+        text-align: center;
+        margin:2px 0px;
+    }
+    .nav-name{
+        display: block;
+
+        padding-left: 5%;
+    }
+    .navbar-logo{
+      
+        width:100%;
+       
+        
+    }
+    .nabar-links{
+        width:100%;
+        position:absolute;
+        background: #393e46dd;
+        top:100%;
+        right:0px;
+        height:23vh;
+        display: none;
+      
+       
+    }
+    .navbar-main {
+        width: 90%;
+        padding:5% 0% 0% 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-main li{
+       
+        box-sizing:border-box;
+        display:block;
+        float:right;
+        width: 90%;
+        margin:5px 0px;
+        text-align: center;
+    }
+    .navbar-main li a{
+        width:max-content;
+        
+    }
+    .navbar-mobile-menu{
+        display: block;
+        right: 5%;
+        top:35%;
+        position: absolute;  
+    }
+    .navbar-mobile-trigger{
+        display: block;
+    }
+    /* main - section  */
+
+    .main-container{
+        padding:0px;
+        flex-direction: column-reverse;
+    }
+   
+    .main-box-1{
+        width:100%;     
+        padding: 8% 3%;
+    }
+    .main-box-2{
+        width:100%;
+
+    }
+    .guidline{
+        list-style-type:decimal;
+        font-size:0.6rem;
+    }
+    .guidlines{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .main-content-1{
+        
+        padding:4% 4%;
+
+    }
+    .main-content-heading{
+        font-size:1rem;
+        margin:2px 0px;
+    }
+    .books-borrowed,.number-of-books{
+        font-size:0.4rem;
+      
+        
+    }
+
+    .main-content-heading{
+        font-size:1.1rem;
+        margin:2px 0px;
+    }
+    .books-borrowed,.number-of-books{
+        font-size:0.5rem;
+    }
+    /* Profile */
+    .profile-container{
+        flex-direction: row;
+        width: 100%;
+        margin: none;
+        
+        box-sizing: border-box;
+    }
+    .profile-image{
+        display: flex;
+        width: 30%;
+        margin: 0% 1%;
+        /* border:2px solid green; */
+        box-sizing:border-box;
+        /* padding:2% 2%; */
+    }
+    .profile-image img{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        height:20vh;
+
+            }
+    .profile-data{
+        /* border:2px solid black; */
+        width:70%;
+        margin: 1px;
+        padding: 4%;
+        font-size:0.5rem;
+        box-sizing:border-box;
+    }
+
+    .footer-heading{
+        font-size:1.1rem;
+
+    }
+    .footer-address{
+        font-size:1.1rem;
+    }
+    .main-footer-middle-box a{
+        font-size:0.8rem;
+    }
+  
+
+}

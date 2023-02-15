@@ -1,0 +1,118 @@
+/* footer */
+
+  
+
+.main-footer{
+
+    background-color:rgb(123, 122, 122);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .main-footer-container{
+    display:flex;
+    padding:3% 0% 3% 0%;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .footer-heading{
+    font-size:1.4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:3% auto 1% auto;
+    color:rgba(233, 240, 240, 0.753);
+    text-align: center;
+  }
+  .footer-address{
+        font-size:0.8rem;
+        font-family:monospace;
+        margin: 1% 1% 2% 1%;
+        color:rgba(233, 240, 240, 0.753);
+        text-align:center;
+  }
+  .footer-social-icons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    margin: 10% 0% 0% 2%;
+  }
+  
+  .footer-social-icons a{
+    margin: 0px 10px 3px 0px;
+    background-color: transparent;
+    color:rgba(233, 240, 240, 0.753);
+  }
+  .footer-social-icons a:hover{
+    transform: scale(1.1);
+  }
+
+  .main-footer-middle-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    margin:2px;
+  }
+  .main-footer-middle-box a{
+   color:rgba(233, 240, 240, 0.753);
+   margin: 0px 9px;
+   text-decoration: none;
+  }
+  .main-footer-middle-box a:hover{
+    transform:scale(1.05);
+  }
+  .main-footer-copyright{
+    color:rgba(233, 240, 240, 0.753);
+    text-align:center;
+    font-size:0.6rem;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 3%;
+  }
+ 
+
+
+
+
+
+
+
+
+  @media screen and (min-width:480px) and (max-width:740px){
+
+
+/* footer */
+
+.main-footer-middle-box a{        
+    margin: 6px 16px;
+   }
+   .footer-social-icons a{
+    margin: 0px 12px;
+}
+}
+
+
+
+@media screen and (max-width:480px){
+
+
+/* footer */
+
+
+.main-footer-middle-box{    
+flex-direction: column;
+margin: 5px 0px 0px 2px;
+}
+.main-footer-middle-box a{
+
+margin: 6px 6px;
+
+}
+.footer-social-icons a{
+margin: 0px 10px;
+}
+.main-footer-copyright{
+    width:70%;
+    margin: auto;
+}
+}
